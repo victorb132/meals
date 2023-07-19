@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meals/screens/categories_meals_screen.dart';
 import 'package:meals/screens/categories_screens.dart';
 
 void main() {
@@ -25,6 +26,9 @@ class MyApp extends StatelessWidget {
             .copyWith(secondary: Colors.amber),
       ),
       home: const CategoriesScreens(),
+      routes: {
+        '/categories-meals': (ctx) => const CategoriesMealsScreen(),
+      },
     );
   }
 }
