@@ -22,9 +22,7 @@ class MealDetailScreen extends StatelessWidget {
         margin: const EdgeInsets.all(10),
         decoration: BoxDecoration(
           color: Colors.white,
-          border: Border.all(
-            color: Colors.grey,
-          ),
+          border: Border.all(color: Colors.grey),
           borderRadius: BorderRadius.circular(10),
         ),
         child: child);
