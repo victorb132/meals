@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meals/screens/categories_meals_screen.dart';
 import 'package:meals/screens/categories_screens.dart';
 import 'package:meals/screens/meal_detail_screen.dart';
+import 'package:meals/screens/tabs_screen.dart';
 import 'package:meals/utils/app_routes.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'DeliMeals',
+      title: 'Meals',
       theme: ThemeData(
         fontFamily: 'Raleway',
         canvasColor: const Color.fromRGBO(255, 254, 229, 1),
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
             .copyWith(secondary: Colors.amber),
       ),
       routes: {
-        AppRoutes.home: (ctx) => const CategoriesScreens(),
+        AppRoutes.home: (ctx) => const TabsScreen(),
         AppRoutes.categoriesMeals: (ctx) => const CategoriesMealsScreen(),
         AppRoutes.mealDetail: (ctx) => const MealDetailScreen(),
       },
